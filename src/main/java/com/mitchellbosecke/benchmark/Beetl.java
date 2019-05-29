@@ -26,7 +26,6 @@ public class Beetl extends BaseBenchmark {
 		Configuration cfg = Configuration.defaultConfiguration();
 		cfg.setStatementStart("@");
 		cfg.setStatementEnd(null);
-		cfg.getResourceMap().put("autoCheck", "false");
 		gt = new GroupTemplate(resourceLoader, cfg);
 
 	}
@@ -36,9 +35,8 @@ public class Beetl extends BaseBenchmark {
 		Template template = gt.getTemplate("/templates/stocks.beetl.html");
 		template.binding(getContext());
 		Writer writer = new StringWriter();
-		template.renderTo(writer);
-
-		return writer.toString();
+		String str = template.render();
+		return str;
 	}
 
 	static class MyClasspathResourceLoader extends ClasspathResourceLoader {

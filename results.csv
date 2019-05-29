@@ -1,5 +1,0 @@
-"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"com.mitchellbosecke.benchmark.Beetl.benchmark","thrpt",1,50,44275.132368,1403.051340,"ops/s"
-"com.mitchellbosecke.benchmark.Freemarker.benchmark","thrpt",1,50,13123.127650,310.361868,"ops/s"
-"com.mitchellbosecke.benchmark.Rocker.benchmark","thrpt",1,50,34796.365329,572.407363,"ops/s"
-"com.mitchellbosecke.benchmark.Velocity.benchmark","thrpt",1,50,4790.624545,175.862070,"ops/s"
